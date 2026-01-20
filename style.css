@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
+  background-color: #faf5f0;
+}
+
+/* ヘッダー */
+.header {
+  background-color: #b03060;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.header nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* ヒーロー */
+.hero {
+  height: 380px;
+  background-image: url("images/hero.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.hero {
+  position: relative;
+}
+
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.hero h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.hero button {
+  background-color: #b03060;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* メニュー */
+.menu {
+  padding: 40px;
+  text-align: center;
+}
+
+.item {
+  display: inline-block;
+  background-color: white;
+  width: 200px;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* 店舗案内 */
+.about {
+  background-color: #f0e6dc;
+  padding: 40px;
+  text-align: center;
+}
+
+/* フッター */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
